@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="usernameLabel">Player\'s Name: </string>
+    <string name="scores_header"><b><u>Player</u>"     "<u>Level</u>"     "<u>Score</u></b></string>
+</resources>

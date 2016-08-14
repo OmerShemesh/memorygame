@@ -55,7 +55,7 @@ public class GameManager {
             cubes.add(i);
         }
         Collections.shuffle(cubes);
-        this.cubesArray = (Integer[])cubes.toArray(new Integer[numOfImages]);
+        this.cubesArray = cubes.toArray(new Integer[numOfImages]);
 
         this.player = player;
         this.level = level;
@@ -134,7 +134,7 @@ public class GameManager {
                                 setClickable();
                                 flipped = -1;
                             }
-                        },600);
+                        },500);
 
                     }
 

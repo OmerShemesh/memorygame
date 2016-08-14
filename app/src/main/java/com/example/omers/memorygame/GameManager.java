@@ -76,18 +76,13 @@ public class GameManager {
 
 
         ArrayList<ImageView> images = new ArrayList<>();
-        for (int i = 0; i < layout.getChildCount(); i++) {
-            TableRow row = (TableRow) layout.getChildAt(i);
+        for (int row = 0; row < layout.getChildCount(); row++) {
+            TableRow tableRow = (TableRow) layout.getChildAt(row);
 
-            for (int j = 0; j < row.getChildCount(); j++) {
+            for (int col = 0; col < tableRow.getChildCount(); col++) {
 
-                View subView = row.getChildAt(j);
-
-                if (subView instanceof ImageView) {
-                    ImageView imageView = (ImageView) subView;
-                    images.add(imageView);
-                    //manipulate the imageView
-                }
+                ImageView image = (ImageView)tableRow.getChildAt(col);
+                images.add(image);
             }
 
         }

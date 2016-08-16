@@ -57,8 +57,6 @@ public class LevelActivity extends AppCompatActivity {
                 new GameManager(6, this, table,this.chronometer,message,"Level 3",sharedPref);
                 break;
         }
-
-
     }
 
 
